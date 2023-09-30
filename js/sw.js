@@ -10,6 +10,10 @@ function handleKeyPress(event) {
 document.addEventListener('keydown', handleKeyPress);
 
 var allowedDomains = [
+  "https://ok-games.vercel.app",
+  "https://ok-games-okirpan.vercel.app",
+  "https://ok-games-git-main-okirpan.vercel.app",
+  "https://games.omkarkirpan.com",
   "https://nate-games.xyz",
   "https://nate-games.github.io",
   "https://nate-games.netlify.app",
@@ -22,7 +26,7 @@ var allowedDomains = [
 var currentDomain = window.location.origin;
 
 if (allowedDomains.indexOf(currentDomain) === -1) {
-  window.top.location.href = "https://nate-games.xyz/en-us/sitelock";
+  window.top.location.href = "https://ok-games.vercel.app/en-us/sitelock";
 }
 
 // Protect passwords
